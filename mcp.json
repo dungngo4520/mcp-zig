@@ -1,0 +1,57 @@
+{
+    "name": "mcp-zig",
+    "version": "1.0.0",
+    "description": "MCP server providing Zig language features (completions, hover, definitions, references) via zls integration",
+    "icon": "https://ziglang.org/zig-logo.svg",
+    "authors": [
+        {
+            "name": "dungngo4520"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dungngo4520/mcp-zig"
+    },
+    "homepage": "https://github.com/dungngo4520/mcp-zig",
+    "license": "MIT",
+    "categories": [
+        "development",
+        "languages"
+    ],
+    "keywords": [
+        "zig",
+        "zls",
+        "lsp",
+        "completions",
+        "hover",
+        "definitions"
+    ],
+    "config": {
+        "command": "npx",
+        "args": [
+            "-y",
+            "@dungngo4520/mcp-zig"
+        ],
+        "env": {
+            "WORKSPACE_ROOT": "${workspaceRoot}"
+        }
+    },
+    "tools": [
+        {
+            "name": "zig_complete",
+            "description": "Get code completions for Zig at a specific position"
+        },
+        {
+            "name": "zig_hover",
+            "description": "Get hover information for a symbol in Zig code"
+        },
+        {
+            "name": "zig_goto_definition",
+            "description": "Find the definition location of a symbol"
+        },
+        {
+            "name": "zig_find_references",
+            "description": "Find all references to a symbol"
+        }
+    ]
+}

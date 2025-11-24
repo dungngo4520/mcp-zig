@@ -1,0 +1,55 @@
+{
+  "name": "@dungngo4520/mcp-zig",
+  "version": "1.0.0",
+  "description": "MCP server for Zig language features (completions, hover, definitions) via zls integration",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "mcp-zig": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "zig",
+    "zls",
+    "lsp",
+    "language-server",
+    "model-context-protocol",
+    "completions",
+    "hover"
+  ],
+  "author": "dungngo4520 <dungngo4520@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dungngo4520/mcp-zig.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dungngo4520/mcp-zig/issues"
+  },
+  "homepage": "https://github.com/dungngo4520/mcp-zig#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "mcp.json"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "vscode-languageclient": "^9.0.1",
+    "vscode-languageserver-protocol": "^3.17.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
