@@ -1,6 +1,6 @@
 {
   "name": "@dungngo4520/mcp-zig",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server for Zig language features (completions, hover, definitions) via zls integration",
   "main": "dist/index.js",
   "type": "module",
